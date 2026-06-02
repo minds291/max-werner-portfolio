@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Веб-дизайнер</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body class="dark-theme">
+
+    <header class="hero">
+        <nav class="hero-nav">
+            <a href="#home" class="nav-logo">Макс Вернер</a>
+            <ul class="nav-menu">
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Переключить тему">
+                        <span class="icon-moon">🌙</span>
+                        <span class="icon-sun">☀️</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Привет!</h1>
+            <p class="hero-subtitle">Веб-дизайнер / Frontend / No-code специалист</p>
+            <p class="hero-description">
+                Я Макс, я создаю современные и функциональные веб-сайты, которые решают задачи вашего бизнеса и привлекают клиентов.
+            </p>
+            <a href="#projects" class="hero-button">Смотреть проекты</a>
+        </div>
+
+        <div class="animated-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+<!-- ========== Секция "Обо мне" (упрощенная) ========== -->
+<section id="about" class="about-section">
+    <div class="about-container-simplified">
+        <h2 class="about-title">Обо мне</h2>
+        <p class="about-text">
+            Я — digital-специалист, увлеченный созданием интуитивно понятных и эстетически приятных веб-интерфейсов. Моя философия проста: хороший дизайн — это не только то, как что-то выглядит, но и то, как это работает.
+        </p>
+        <p class="about-text">
+            Я специализируюсь на frontend-разработке и современных no-code инструментах. Это позволяет мне быстро и эффективно воплощать идеи в жизнь, создавая адаптивные и производительные сайты, которые решают конкретные задачи.
+        </p>
+        <div class="skills-section">
+            <h3 class="skills-title">Основные инструменты и навыки:</h3>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Headless CMS</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">UI/UX Принципы</span>
+                <span class="skill-tag">Адаптивный дизайн</span>
+                <span class="skill-tag">No-code</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== Секция "Проекты" ========== -->
+<section id="projects" class="projects-section">
+    <div class="projects-container">
+        <h2 class="projects-title">Мои проекты</h2>
+        
+        <div class="projects-grid">
+            
+            <!-- Проект 1: No-code -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/img/kaminkomfort.jpg" alt="Проект 1">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>No Code</span>
+                        <span>UI Design</span>
+                        <span>Адаптивный дизайн</span>
+                    </div>
+                    <h3 class="project-name">Landing Page для Каминкомфорт</h3>
+                    <p class="project-desc">Современный одностраничный магазин для бренда одежды с упором на типографику.</p>
+                    <a href="#" class="project-link" onclick="event.preventDefault(); openLivePreview('kaminkomfort');">Смотреть кейс →</a>
+                </div>
+            </div>
+
+            <!-- Проект 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/img/stroimaster.jpg" alt="Проект 2">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>HTML5 & CSS3</span>
+                        <span>Адаптивный дизайн</span>
+                    </div>
+                    <h3 class="project-name">Landing Page для СтройМастер</h3>
+                    <p class="project-desc">Лендинг для строительной компании: воронка от первого экрана до заявки, разработанная вдвое быстрее с ИИ-ассистентом — без потери качества кода.</p>
+                    <a href="#" class="project-link" onclick="event.preventDefault(); openLivePreview('stroimaster');">Смотреть кейс →</a>
+                </div>
+            </div>
+
+            <!-- Проект 3: AXIOM -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/img/axiom_screenshot.png" alt="Проект AXIOM">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>HTML5 и CSS3</span>
+                        <span>Адаптивный Дизайн</span>
+                    </div>
+                    <h3 class="project-name">Проект AXIOM</h3>
+                    <p class="project-desc">Корпоративный лендинг для B2B-недвижимости: дизайн, который вызывает доверие с первого экрана — разработан с применением ИИ-инструментов для ускорения цикла.</p>
+                    <a href="#" class="project-link" onclick="event.preventDefault(); openLivePreview('axiom');">Смотреть кейс →</a>
+                </div>
+            </div>
+
+            <!-- Проект 3: Strapi Landing -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/img/strapi_landing_screenshot.png" alt="Проект Strapi Landing">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>HTML5 и CSS3</span>
+                        <span>Headless CMS</span>
+                        <span>Адаптивный Дизайн</span>
+                    </div>
+                    <h3 class="project-name">Strapi Landing</h3>
+                    <p class="project-desc">Проект по миграции маркетингового лендинга на Headless CMS: бесшовный перенос контента, гибкое управление блоками и интеграция API</p>
+                    <a href="#" class="project-link" onclick="event.preventDefault(); openLivePreview('strapi');">Смотреть кейс →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ========== Секция "Контакты" (Footer) ========== -->
+<footer id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2 class="contact-title">Создадим цифровой опыт вместе</h2>
+        <p class="contact-subtitle">
+            Я всегда открыт для новых проектов и интересных идей. 
+            Напишите мне, и мы всё обсудим.
+        </p>
+
+        <!-- Большая кнопка-ссылка на почту -->
+        <a href="mailto:your-email@example.com" class="contact-email">
+            your-email@example.com
+        </a>
+
+        <!-- Социальные сети и мессенджеры -->
+        <div class="social-links">
+            <a href="https://t.me/yourusername" target="_blank" class="social-link">Telegram</a>
+            <a href="https://github.com/yourusername" target="_blank" class="social-link">GitHub</a>
+            <a href="https://behance.net/yourusername" target="_blank" class="social-link">Behance</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">LinkedIn</a>
+        </div>
+
+        <!-- Копирайт -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Creative Developer. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== LIVE PREVIEW: Kaminkomfort ========== -->
+<div id="lp-kaminkomfort" class="lp-overlay" role="dialog" aria-modal="true" aria-label="Kaminkomfort — Live Preview">
+
+    <nav class="lp-nav">
+        <button class="lp-back-btn" onclick="closeLivePreview('kaminkomfort')">
+            <span>←</span>
+            <span>Назад</span>
+        </button>
+        <span class="lp-nav-brand">Kaminkomfort</span>
+        <button class="lp-close-btn" onclick="closeLivePreview('kaminkomfort')" aria-label="Закрыть">✕</button>
+    </nav>
+
+    <div class="lp-page">
+
+        <section class="lp-hero">
+            <div class="lp-hero-content">
+                <div class="lp-tags">
+                    <span>No Code</span>
+                    <span>UI Design</span>
+                    <span>Landing Page</span>
+                </div>
+                <h2 class="lp-hero-title">Kaminkomfort<br>Landing Page</h2>
+                <p class="lp-hero-sub">Современный лендинг для бренда каминов и отопительных систем</p>
+                <a href="https://kaminkomfort39.ru" target="_blank" rel="noopener noreferrer" class="lp-visit-btn">Посетить сайт →</a>
+            </div>
+            <div class="lp-hero-shapes">
+                <div class="lp-shape lp-s1"></div>
+                <div class="lp-shape lp-s2"></div>
+                <div class="lp-shape lp-s3"></div>
+            </div>
+        </section>
+
+        <section class="lp-section lp-bg-alt">
+            <div class="lp-container">
+                <div class="lp-split">
+                    <div class="lp-split-main">
+                        <h2 class="lp-section-title">О проекте</h2>
+                        <p class="lp-text">Kaminkomfort — компания по продаже и монтажу каминов, отопительных систем и сопутствующих товаров. Задача — создать современный конверсионный лендинг, который чётко передаёт ценность бренда и привлекает клиентов.</p>
+                        <p class="lp-text">Упор сделан на чистую типографику, лаконичную структуру и грамотную подачу информации о продуктах и услугах компании.</p>
+                    </div>
+                    <div class="lp-meta">
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Тип проекта</span>
+                            <span class="lp-meta-val">Landing Page</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Платформа</span>
+                            <span class="lp-meta-val">Tilda</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Роль</span>
+                            <span class="lp-meta-val">UI Designer</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Год</span>
+                            <span class="lp-meta-val">2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lp-section">
+            <div class="lp-container">
+                <h2 class="lp-section-title">Что использовалось</h2>
+                <div class="lp-tools">
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🛠</span>
+                        <h3 class="lp-tool-name">Tilda</h3>
+                        <p class="lp-tool-desc">No-code платформа для быстрой сборки лендингов с гибкой кастомизацией блоков</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🎨</span>
+                        <h3 class="lp-tool-name">Figma</h3>
+                        <p class="lp-tool-desc">Прототипирование и разработка UI-макетов перед финальной версткой на платформе</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">📐</span>
+                        <h3 class="lp-tool-name">UI Design</h3>
+                        <p class="lp-tool-desc">Создание визуальной системы: типографика, цвета, сетка и компоненты интерфейса</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">📱</span>
+                        <h3 class="lp-tool-name">Адаптивность</h3>
+                        <p class="lp-tool-desc">Оптимизация дизайна и верстки для корректного отображения сайта на всех типах устройств.</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">⚡</span>
+                        <h3 class="lp-tool-name">Конверсионный UX</h3>
+                        <p class="lp-tool-desc">Проектирование пути пользователя для максимизации целевых действий</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🔤</span>
+                        <h3 class="lp-tool-name">Типографика</h3>
+                        <p class="lp-tool-desc">Подбор шрифтовых пар и визуальной иерархии для читаемости и стиля бренда</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lp-section lp-bg-alt">
+            <div class="lp-container">
+                <h2 class="lp-section-title lp-center">Демонстрация</h2>
+                <p class="lp-text lp-text-center">Финальный результат — скриншот готового лендинга</p>
+                <div class="lp-browser">
+                    <div class="lp-browser-chrome">
+                        <div class="lp-browser-dots">
+                            <span class="lp-dot lp-dot-r"></span>
+                            <span class="lp-dot lp-dot-y"></span>
+                            <span class="lp-dot lp-dot-g"></span>
+                        </div>
+                        <div class="lp-browser-addr">kaminkomfort39.ru</div>
+                        <div class="lp-browser-ctrl"></div>
+                    </div>
+                    <div class="lp-browser-screen">
+                        <picture class="lp-picture">
+                            <source media="(max-width: 768px)" srcset="assets/img/kaminkomfort_mobile.png">
+                            <img src="assets/img/kaminkomfort.jpg" alt="Kaminkomfort — финальный лендинг" class="lp-screenshot">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lp-cta">
+            <button class="lp-cta-btn" onclick="closeLivePreview('kaminkomfort')">← Вернуться к проектам</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========== LIVE PREVIEW: СтройМастер ========== -->
+<div id="lp-stroimaster" class="lp-overlay" role="dialog" aria-modal="true" aria-label="СтройМастер — Live Preview">
+
+    <nav class="lp-nav">
+        <button class="lp-back-btn" onclick="closeLivePreview('stroimaster')">
+            <span>←</span>
+            <span>Назад</span>
+        </button>
+        <span class="lp-nav-brand">СтройМастер</span>
+        <button class="lp-close-btn" onclick="closeLivePreview('stroimaster')" aria-label="Закрыть">✕</button>
+    </nav>
+
+    <div class="lp-page">
+
+        <section class="lp-hero">
+            <div class="lp-hero-content">
+                <div class="lp-tags">
+                    <span>HTML5 &amp; CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Landing Page</span>
+                </div>
+                <h2 class="lp-hero-title">СтройМастер</h2>
+                <p class="lp-hero-sub">Конверсионный лендинг для строительной компании — чистый код, продуманная воронка и ИИ в арсенале разработчика</p>
+                <a href="https://stroimaster.ru" target="_blank" rel="noopener noreferrer" class="lp-visit-btn">Посетить сайт →</a>
+            </div>
+            <div class="lp-hero-shapes">
+                <div class="lp-shape lp-s1"></div>
+                <div class="lp-shape lp-s2"></div>
+                <div class="lp-shape lp-s3"></div>
+            </div>
+        </section>
+
+        <section class="lp-section lp-bg-alt">
+            <div class="lp-container">
+                <div class="lp-split">
+                    <div class="lp-split-main">
+                        <h2 class="lp-section-title">О проекте</h2>
+                        <p class="lp-text">СтройМастер — компания, специализирующаяся на строительстве и ремонте. Задача: за сжатые сроки создать ландинг, который с первых секунд убеждает клиента, что именно эта компания решит его задачу, и без лишних шагов ведёт к заявке.</p>
+                        <p class="lp-text">Структура выстроена по принципу воронки: УТП → услуги → преимущества → форма заявки. В разработке активно использовался ИИ-ассистент — он ускорил генерацию структуры, помог с ревью кода и взял на себя рутинные блоки, освободив время для глубокой проработки UX и деталей дизайна.</p>
+                    </div>
+                    <div class="lp-meta">
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Тип проекта</span>
+                            <span class="lp-meta-val">Landing Page</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Стек</span>
+                            <span class="lp-meta-val">HTML5 &amp; CSS3, JS</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Роль</span>
+                            <span class="lp-meta-val">Frontend Developer</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Год</span>
+                            <span class="lp-meta-val">2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lp-section">
+            <div class="lp-container">
+                <h2 class="lp-section-title">Что использовалось</h2>
+                <div class="lp-tools">
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🛠</span>
+                        <h3 class="lp-tool-name">HTML5 &amp; CSS3</h3>
+                        <p class="lp-tool-desc">Семантическая разметка и современные возможности CSS для чистой и поддерживаемой вёрстки</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">⚙️</span>
+                        <h3 class="lp-tool-name">JavaScript</h3>
+                        <p class="lp-tool-desc">Интерактивность страницы: плавная прокрутка, анимации при скролле и обработка формы</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🎨</span>
+                        <h3 class="lp-tool-name">Figma</h3>
+                        <p class="lp-tool-desc">Прототипирование и разработка UI-макета до начала вёрстки</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">📱</span>
+                        <h3 class="lp-tool-name">Адаптивность</h3>
+                        <p class="lp-tool-desc">Mobile-first подход и CSS Grid / Flexbox для корректного отображения на всех устройствах</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">⚡</span>
+                        <h3 class="lp-tool-name">Конверсионный UX</h3>
+                        <p class="lp-tool-desc">Воронка пользователя спроектирована для максимизации числа заявок с первого экрана</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">📐</span>
+                        <h3 class="lp-tool-name">UI Design</h3>
+                        <p class="lp-tool-desc">Визуальная система: типографика, цветовая схема, сетка и компоненты интерфейса</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🤖</span>
+                        <h3 class="lp-tool-name">ИИ-ассистент</h3>
+                        <p class="lp-tool-desc">ИИ-ассистент ускорил разработку: генерация структуры, ревью кода и подбор оптимальных решений</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lp-section lp-bg-alt">
+            <div class="lp-container">
+                <h2 class="lp-section-title lp-center">Демонстрация</h2>
+                <p class="lp-text lp-text-center">Финальный результат — скриншот готового лендинга</p>
+                <div class="lp-browser">
+                    <div class="lp-browser-chrome">
+                        <div class="lp-browser-dots">
+                            <span class="lp-dot lp-dot-r"></span>
+                            <span class="lp-dot lp-dot-y"></span>
+                            <span class="lp-dot lp-dot-g"></span>
+                        </div>
+                        <div class="lp-browser-addr">stroimaster.ru</div>
+                        <div class="lp-browser-ctrl"></div>
+                    </div>
+                    <div class="lp-browser-screen">
+                        <picture class="lp-picture">
+                            <source media="(max-width: 768px)" srcset="assets/img/stroimaster_mobile.png">
+                            <img src="assets/img/stroimaster.jpg" alt="СтройМастер — финальный лендинг" class="lp-screenshot">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lp-cta">
+            <button class="lp-cta-btn" onclick="closeLivePreview('stroimaster')">← Вернуться к проектам</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========== LIVE PREVIEW: AXIOM ========== -->
+<div id="lp-axiom" class="lp-overlay" role="dialog" aria-modal="true" aria-label="AXIOM — Live Preview">
+
+    <nav class="lp-nav">
+        <button class="lp-back-btn" onclick="closeLivePreview('axiom')">
+            <span>←</span>
+            <span>Назад</span>
+        </button>
+        <span class="lp-nav-brand">AXIOM</span>
+        <button class="lp-close-btn" onclick="closeLivePreview('axiom')" aria-label="Закрыть">✕</button>
+    </nav>
+
+    <div class="lp-page">
+
+        <section class="lp-hero">
+            <div class="lp-hero-content">
+                <div class="lp-tags">
+                    <span>HTML5 & CSS3</span>
+                    <span>Адаптивный дизайн</span>
+                    <span>Landing Page</span>
+                </div>
+                <h2 class="lp-hero-title">AXIOM</h2>
+                <p class="lp-hero-sub">Строгий корпоративный лендинг для коммерческой недвижимости — доверие с первого экрана, заявка за три клика, ИИ в разработке</p>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="lp-visit-btn">Посетить сайт →</a>
+            </div>
+            <div class="lp-hero-shapes">
+                <div class="lp-shape lp-s1"></div>
+                <div class="lp-shape lp-s2"></div>
+                <div class="lp-shape lp-s3"></div>
+            </div>
+        </section>
+
+        <section class="lp-section lp-bg-alt">
+            <div class="lp-container">
+                <div class="lp-split">
+                    <div class="lp-split-main">
+                        <h2 class="lp-section-title">О проекте</h2>
+                        <p class="lp-text">AXIOM — компания, предоставляющая коммерческую недвижимость для бизнеса. Задача: создать корпоративный лендинг, который с первых секунд транслирует надёжность и солидность, помогает легко ориентироваться в каталоге объектов и убеждает B2B-клиента сделать следующий шаг.</p>
+                        <p class="lp-text">Структура ведёт пользователя от презентации компании к каталогу объектов и форме заявки — каждый блок работает на конверсию. В процессе разработки использовался ИИ: он помог структурировать контент, ускорил верстку сложных блоков и предложил оптимальные UX-решения для корпоративной аудитории.</p>
+                    </div>
+                    <div class="lp-meta">
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Тип проекта</span>
+                            <span class="lp-meta-val">Landing Page</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Стек</span>
+                            <span class="lp-meta-val">HTML5 & CSS3, JS</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Роль</span>
+                            <span class="lp-meta-val">Frontend Developer</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Год</span>
+                            <span class="lp-meta-val">2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lp-section">
+            <div class="lp-container">
+                <h2 class="lp-section-title">Что использовалось</h2>
+                <div class="lp-tools">
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🛠</span>
+                        <h3 class="lp-tool-name">HTML5 & CSS3</h3>
+                        <p class="lp-tool-desc">Семантическая разметка и современные возможности CSS для чистой и поддерживаемой вёрстки</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">⚙️</span>
+                        <h3 class="lp-tool-name">JavaScript</h3>
+                        <p class="lp-tool-desc">Реализация интерактивных элементов интерфейса и работа с формами заявки</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">📱</span>
+                        <h3 class="lp-tool-name">Адаптивность</h3>
+                        <p class="lp-tool-desc">Корректное отображение сложных блоков и каталога на мобильных устройствах</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">⚡</span>
+                        <h3 class="lp-tool-name">Конверсионный UX</h3>
+                        <p class="lp-tool-desc">Проектирование пользовательского пути для максимизации B2B-заявок</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🤖</span>
+                        <h3 class="lp-tool-name">ИИ-ассистент</h3>
+                        <p class="lp-tool-desc">Использование ИИ-ассистента для ускорения разработки, структурирования контента и ревью решений</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lp-section lp-bg-alt">
+            <div class="lp-container">
+                <h2 class="lp-section-title lp-center">Демонстрация</h2>
+                <p class="lp-text lp-text-center">Финальный результат — скриншот готового проекта</p>
+                <div class="lp-browser">
+                    <div class="lp-browser-chrome">
+                        <div class="lp-browser-dots">
+                            <span class="lp-dot lp-dot-r"></span>
+                            <span class="lp-dot lp-dot-y"></span>
+                            <span class="lp-dot lp-dot-g"></span>
+                        </div>
+                        <div class="lp-browser-addr">axiom.ru</div>
+                        <div class="lp-browser-ctrl"></div>
+                    </div>
+                    <div class="lp-browser-screen">
+                        <picture class="lp-picture">
+                            <source media="(max-width: 768px)" srcset="assets/img/axiom_mobile.png">
+                            <img src="assets/img/axiom_screenshot.png" alt="AXIOM — финальный проект" class="lp-screenshot">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lp-cta">
+            <button class="lp-cta-btn" onclick="closeLivePreview('axiom')">← Вернуться к проектам</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- ========== LIVE PREVIEW: Strapi Landing ========== -->
+<div id="lp-strapi" class="lp-overlay" role="dialog" aria-modal="true" aria-label="Strapi Landing — Live Preview">
+    <nav class="lp-nav">
+        <button class="lp-back-btn" onclick="closeLivePreview('strapi')">
+            <span>←</span>
+            <span>Назад</span>
+        </button>
+        <span class="lp-nav-brand">Миграция корпоративного сайта на Strapi CMS</span>
+        <button class="lp-close-btn" onclick="closeLivePreview('strapi')" aria-label="Закрыть">✕</button>
+    </nav>
+
+    <div class="lp-page">
+
+        <section class="lp-hero">
+            <div class="lp-hero-content">
+                <div class="lp-tags">
+                    <span>HTML5 & CSS3</span>
+                    <span>Headless CMS</span>
+                    <span>Адаптивный дизайн</span>
+                </div>
+                <h2 class="lp-hero-title">Strapi Landing</h2>
+                <p class="lp-hero-sub">Перенос готового Landing Page на современную Headless систему управления контентом — гибкое управление блоками, высокая скорость загрузки и полная независимость контент-менеджеров</p>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="lp-visit-btn">Посетить сайт →</a>
+            </div>
+            <div class="lp-hero-shapes">
+                <div class="lp-shape lp-s1"></div>
+                <div class="lp-shape lp-s2"></div>
+                <div class="lp-shape lp-s3"></div>
+            </div>
+        </section>
+
+        <section class="lp-section lp-bg-alt">
+            <div class="lp-container">
+                <div class="lp-split">
+                    <div class="lp-split-main">
+                        <h2 class="lp-section-title">О проекте</h2>
+                        <p class="lp-text">Основная задача проекта заключалась в бесшовном переводе существующего маркетингового лендинга на Headless CMS Strapi без потери позиций в поисковой выдаче и нарушения текущей вёрстки. Требовалось предоставить клиенту удобный и интуитивно понятный интерфейс для самостоятельного редактирования текстов, замены изображений и управления структурой посадочной страницы.</p>
+                        <p class="lp-text">В ходе миграции была спроектирована оптимальная архитектура коллекций и компонентов в Strapi, настроена динамическая выдача контента через API и оптимизирована производительность фронтенда. Использование искусственного интеллекта в процессе работы позволило автоматизировать написание скриптов для миграции данных, сгенерировать схемы валидации и быстро протестировать API-запросы.</p>
+                    </div>
+                    <div class="lp-meta">
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Тип проекта</span>
+                            <span class="lp-meta-val">CMS Migration / Landing</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Стек</span>
+                            <span class="lp-meta-val">HTML5 & CSS3, JS,<br> Strapi CMS</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Роль</span>
+                            <span class="lp-meta-val">Full Stack Developer</span>
+                        </div>
+                        <div class="lp-meta-row">
+                            <span class="lp-meta-label">Год</span>
+                            <span class="lp-meta-val">2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lp-section">
+            <div class="lp-container">
+                <h2 class="lp-section-title">Что использовалось</h2>
+                <div class="lp-tools">
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🛠</span>
+                        <h3 class="lp-tool-name">HTML5 & CSS3</h3>
+                        <p class="lp-tool-desc">Семантическая разметка и современные возможности CSS для чистой и поддерживаемой вёрстки</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">⚙️</span>
+                        <h3 class="lp-tool-name">JavaScript</h3>
+                        <p class="lp-tool-desc">Реализация интерактивных элементов интерфейса и работа с формами заявки</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">📱</span>
+                        <h3 class="lp-tool-name">Адаптивность</h3>
+                        <p class="lp-tool-desc">Корректное отображение сложных блоков и каталога на мобильных устройствах</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">⚡</span>
+                        <h3 class="lp-tool-name">Конверсионный UX</h3>
+                        <p class="lp-tool-desc">Проектирование пользовательского пути для максимизации B2B-заявок</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🔌</span>
+                        <h3 class="lp-tool-name">Strapi CMS</h3>
+                        <p class="lp-tool-desc">Проектирование гибкой архитектуры данных, настройка Headless API и создание удобной панели управления контентом</p>
+                    </div>
+                    <div class="lp-tool">
+                        <span class="lp-tool-icon">🤖</span>
+                        <h3 class="lp-tool-name">ИИ-ассистент</h3>
+                        <p class="lp-tool-desc">Использование ИИ-ассистента для ускорения разработки, структурирования контента и ревью решений</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lp-section lp-bg-alt">
+            <div class="lp-container">
+                <h2 class="lp-section-title lp-center">Демонстрация</h2>
+                <p class="lp-text lp-text-center">Финальный результат — скриншот готового проекта</p>
+                <div class="lp-browser">
+                    <div class="lp-browser-chrome">
+                        <div class="lp-browser-dots">
+                            <span class="lp-dot lp-dot-r"></span>
+                            <span class="lp-dot lp-dot-y"></span>
+                            <span class="lp-dot lp-dot-g"></span>
+                        </div>
+                        <div class="lp-browser-addr">strapi-landing.ru</div>
+                        <div class="lp-browser-ctrl"></div>
+                    </div>
+                    <div class="lp-browser-screen">
+                        <picture class="lp-picture">
+                            <source media="(max-width: 768px)" srcset="assets/img/strapi_landing_mobile.png">
+                            <img src="assets/img/strapi_landing_screenshot.png" alt="Strapi Landing — финальный проект" class="lp-screenshot">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lp-cta">
+            <button class="lp-cta-btn" onclick="closeLivePreview('strapi')">← Вернуться к проектам</button>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
