@@ -1,7 +1,6 @@
     window.addEventListener('DOMContentLoaded', () => {
         // Список ваших приветствий
         const greetings = [
-            "Йоу! 👋",
             "Добро пожаловать!",
             "Привет!",
             "Hello World",
