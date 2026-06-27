@@ -26,7 +26,6 @@
 
         // 1. Проверка: нашли ли мы кнопку?
         if (!themeToggle) {
-            console.error("Кнопка с id='theme-toggle' не найдена в HTML!");
             return;
         }
 
@@ -34,13 +33,11 @@
         const currentTheme = localStorage.getItem('theme');
         if (currentTheme === 'light') {
             body.classList.remove('dark-theme');
-            console.log("Загружена светлая тема из памяти");
         }
 
         // 3. Обработчик клика
         themeToggle.addEventListener('click', () => {
             body.classList.toggle('dark-theme');
-            console.log("Клик по тумблеру! Текущие классы body:", body.className);
 
             // Сохраняем выбор
             if (body.classList.contains('dark-theme')) {
